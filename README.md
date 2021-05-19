@@ -13,4 +13,3 @@ THe process of run this code:
 3. run code...
 
 Good luck!
-# MultiAxis_3DP_MotionPlanning
