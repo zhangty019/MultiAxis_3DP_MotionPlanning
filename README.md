@@ -6,7 +6,7 @@ The link of paper is "http://arxiv.org/abs/2103.00273"
 
 The link of short video is "https://www.youtube.com/watch?v=fsE2KpLk7ZI&t=9s"
 
-THe process of run this code:
+The process of run this code:
 
 1. add plugin "Qt Visual Studio Tools" in VS
 2. set project "Shapelab" as startup 
