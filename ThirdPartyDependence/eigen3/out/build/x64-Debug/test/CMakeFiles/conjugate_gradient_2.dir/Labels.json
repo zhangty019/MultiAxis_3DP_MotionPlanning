@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/PHD/Code/CASE2021_code/ThirdPartyDependence/eigen3/test/conjugate_gradient.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "conjugate_gradient_2"
+	}
+}

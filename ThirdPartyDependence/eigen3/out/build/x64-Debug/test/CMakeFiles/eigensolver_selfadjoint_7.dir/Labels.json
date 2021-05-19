@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/PHD/Code/CASE2021_code/ThirdPartyDependence/eigen3/test/eigensolver_selfadjoint.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "eigensolver_selfadjoint_7"
+	}
+}
