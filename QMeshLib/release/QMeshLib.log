@@ -1,4 +1,0 @@
-﻿  Generate moc_predefs.h
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(240,5): warning MSB8064: Custom build for item "GeneratedFiles\moc_predefs.h.cbt" succeeded, but specified dependency "c:\phd\code\case2021_code\qmeshlib\generatedfiles\moc_predefs.h.cbt" does not exist. This may cause incremental build to work incorrectly.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(240,5): warning MSB8065: Custom build for item "GeneratedFiles\moc_predefs.h.cbt" succeeded, but specified output "c:\phd\code\case2021_code\qmeshlib\generatedfiles\release\moc_predefs.h" has not been created. This may cause incremental build to work incorrectly.
-  QMeshLib.vcxproj -> C:\PHD\Code\CASE2021_code\QMeshLib\release\QMeshLib.lib

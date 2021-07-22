@@ -122,8 +122,8 @@ public:
     QDoubleSpinBox *doubleSpinBox_E3YOFF;
     QLabel *label_12;
     QDoubleSpinBox *doubleSpinBox_lambda;
-    QLabel *label_5;
     QHBoxLayout *horizontalLayout_5;
+    QLabel *label_5;
     QCheckBox *checkBox_varyDistance;
     QCheckBox *checkBox_varyHeight;
     QCheckBox *checkBox_varyWidth;
@@ -147,8 +147,6 @@ public:
     QProgressBar *progressBar_GcodeSimulation;
     QCheckBox *checkBox_stopSimulation;
     QTreeView *treeView;
-    QPushButton *pushButton_test;
-    QPushButton *pushButton_clearAll;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuView;
@@ -680,16 +678,16 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_6);
 
-        label_5 = new QLabel(dockWidgetContents);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setFont(font);
-        label_5->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);"));
-
-        verticalLayout->addWidget(label_5);
-
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setSpacing(6);
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        label_5 = new QLabel(dockWidgetContents);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setFont(font);
+        label_5->setStyleSheet(QString::fromUtf8(""));
+
+        horizontalLayout_5->addWidget(label_5);
+
         checkBox_varyDistance = new QCheckBox(dockWidgetContents);
         checkBox_varyDistance->setObjectName(QString::fromUtf8("checkBox_varyDistance"));
         checkBox_varyDistance->setFont(font);
@@ -728,7 +726,7 @@ public:
         font7.setUnderline(false);
         font7.setWeight(75);
         pushButton_calDWH->setFont(font7);
-        pushButton_calDWH->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 80);"));
+        pushButton_calDWH->setStyleSheet(QString::fromUtf8(""));
 
         verticalLayout->addWidget(pushButton_calDWH);
 
@@ -844,21 +842,11 @@ public:
 
         verticalLayout->addWidget(treeView);
 
-        pushButton_test = new QPushButton(dockWidgetContents);
-        pushButton_test->setObjectName(QString::fromUtf8("pushButton_test"));
-
-        verticalLayout->addWidget(pushButton_test);
-
-        pushButton_clearAll = new QPushButton(dockWidgetContents);
-        pushButton_clearAll->setObjectName(QString::fromUtf8("pushButton_clearAll"));
-
-        verticalLayout->addWidget(pushButton_clearAll);
-
         dockWidget->setWidget(dockWidgetContents);
         MainWindow->addDockWidget(static_cast<Qt::DockWidgetArea>(2), dockWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1325, 18));
+        menuBar->setGeometry(QRect(0, 0, 1325, 26));
         menuBar->setLayoutDirection(Qt::LeftToRight);
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
@@ -977,7 +965,7 @@ public:
         actionExport_to_Abaqus_model->setText(QApplication::translate("MainWindow", "Export to Abaqus model", nullptr));
         navigationToolBar->setWindowTitle(QApplication::translate("MainWindow", "navigationToolBar", nullptr));
         selectionToolBar->setWindowTitle(QApplication::translate("MainWindow", "selectionToolBar", nullptr));
-        label_MANY_3DP_CNC_CAM->setText(QApplication::translate("MainWindow", "CASE2021 Singular-Aware Opt", nullptr));
+        label_MANY_3DP_CNC_CAM->setText(QApplication::translate("MainWindow", "RAL(CASE)2021 Singular-Aware Opt", nullptr));
         label->setText(QApplication::translate("MainWindow", "Coordinate:", nullptr));
         checkBox_Yup2Zup->setText(QApplication::translate("MainWindow", "Yup -> Zup ", nullptr));
         label_Xmove->setText(QApplication::translate("MainWindow", "X", nullptr));
@@ -1000,8 +988,8 @@ public:
         label_9->setText(QApplication::translate("MainWindow", "Offset:", nullptr));
         label_10->setText(QApplication::translate("MainWindow", "X", nullptr));
         label_11->setText(QApplication::translate("MainWindow", "Y", nullptr));
-        label_12->setText(QApplication::translate("MainWindow", "lamda", nullptr));
-        label_5->setText(QApplication::translate("MainWindow", "Filament Volume:", nullptr));
+        label_12->setText(QApplication::translate("MainWindow", "Lamda", nullptr));
+        label_5->setText(QApplication::translate("MainWindow", "Filament Volume =", nullptr));
         checkBox_varyDistance->setText(QApplication::translate("MainWindow", "D", nullptr));
         checkBox_varyHeight->setText(QApplication::translate("MainWindow", "H", nullptr));
         checkBox_varyWidth->setText(QApplication::translate("MainWindow", "W", nullptr));
@@ -1013,11 +1001,9 @@ public:
         pushButton_calCollision->setText(QApplication::translate("MainWindow", "3.Collision Check", nullptr));
         pushButton_calCollisionElimination->setText(QApplication::translate("MainWindow", "4.Collision Elimination", nullptr));
         pushButton_calCollision_continuous->setText(QApplication::translate("MainWindow", "Continuous Collision Checking", nullptr));
-        pushButton_Gcode_writting->setText(QApplication::translate("MainWindow", "5.G Code Writting ", nullptr));
+        pushButton_Gcode_writting->setText(QApplication::translate("MainWindow", "5.G Code Writing ", nullptr));
         pushButton_GcodeSimulation->setText(QApplication::translate("MainWindow", "Simulation", nullptr));
         checkBox_stopSimulation->setText(QApplication::translate("MainWindow", "Stop", nullptr));
-        pushButton_test->setText(QApplication::translate("MainWindow", "PushButton_test", nullptr));
-        pushButton_clearAll->setText(QApplication::translate("MainWindow", "Clear All", nullptr));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", nullptr));
         menuView->setTitle(QApplication::translate("MainWindow", "View", nullptr));
         menuSelect->setTitle(QApplication::translate("MainWindow", "Select", nullptr));

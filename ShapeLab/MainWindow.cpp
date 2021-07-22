@@ -145,9 +145,7 @@ void MainWindow::createActions()
 	connect(ui->checkBox_showSingularityNode, SIGNAL(released()), this, SLOT(special_Draw_Command()));
 	connect(ui->checkBox_showSolveSelection, SIGNAL(released()), this, SLOT(special_Draw_Command()));
 
-	connect(ui->pushButton_test, SIGNAL(released()), this, SLOT(test_button()));
-	
-
+	//connect(ui->pushButton_test, SIGNAL(released()), this, SLOT(test_button()));
 }
 
 void MainWindow::open()
@@ -489,21 +487,21 @@ PolygenMesh *MainWindow::getSelectedPolygenMesh()
     return nullptr;
 }
 
-void MainWindow::on_pushButton_clearAll_clicked()
-{
-    int i = 0;
-    for (GLKPOSITION pos=polygenMeshList.GetHeadPosition(); pos!=nullptr; i++){
-        PolygenMesh *polygenMesh = (PolygenMesh*)polygenMeshList.GetNext(pos);
-        QMeshPatch *patch = (QMeshPatch*)polygenMesh->GetMeshList().GetHead();
-        if (i<2)
-            continue;
-        for (GLKPOSITION pos2=patch->GetFaceList().GetHeadPosition(); pos2!=nullptr;){
-            QMeshFace *face = (QMeshFace*)patch->GetFaceList().GetNext(pos2);
-            face->m_nIdentifiedPatchIndex = 0;
-        }
-    }
-    pGLK->refresh(true);
-}
+//void MainWindow::on_pushButton_clearAll_clicked()
+//{
+//    int i = 0;
+//    for (GLKPOSITION pos=polygenMeshList.GetHeadPosition(); pos!=nullptr; i++){
+//        PolygenMesh *polygenMesh = (PolygenMesh*)polygenMeshList.GetNext(pos);
+//        QMeshPatch *patch = (QMeshPatch*)polygenMesh->GetMeshList().GetHead();
+//        if (i<2)
+//            continue;
+//        for (GLKPOSITION pos2=patch->GetFaceList().GetHeadPosition(); pos2!=nullptr;){
+//            QMeshFace *face = (QMeshFace*)patch->GetFaceList().GetNext(pos2);
+//            face->m_nIdentifiedPatchIndex = 0;
+//        }
+//    }
+//    pGLK->refresh(true);
+//}
 
 void MainWindow::on_treeView_clicked(const QModelIndex &index)
 {
@@ -651,7 +649,7 @@ void MainWindow::runGcodeSimulation() {
 	}
 	
 	gcodetimerItertime = 0;
-	Gcode_timer.start(20);
+	Gcode_timer.start(50);
 
 	std::cout << "------------------------------------------- G code Simulation Running ..." << std::endl;
 
@@ -1348,27 +1346,28 @@ void MainWindow::doTimerGcodeMoving(){
 
 }
 
-//function test
-void MainWindow::test_button() {
-	// create the graph given in above fugure 
-	int V = 11;
-	std::vector<int> endNode_NoSet = { 9,10 };
-	Graph g(V, endNode_NoSet);
+////function test
 
-	//  making above shown graph 
-	g.addEdge(0, 4, 1);		g.addEdge(0, 1, 2);
-	g.addEdge(1, 8, 3);		g.addEdge(1, 11, 4);	g.addEdge(1, 8, 5);	g.addEdge(1, 11,6);
-	g.addEdge(2, 8, 3);		g.addEdge(2, 11, 4);	g.addEdge(2, 8, 5);	g.addEdge(2, 1, 6);
-	g.addEdge(3, 7, 7);		g.addEdge(3, 2, 8);		g.addEdge(4, 7, 7);	g.addEdge(4, 2, 8);
-	g.addEdge(5, 7, 7);		g.addEdge(5, 2, 8);
-	g.addEdge(6, 1, 7);		g.addEdge(6, 2, 8);
-	g.addEdge(7, 4, 9);		g.addEdge(7, 1, 10);
-	g.addEdge(8, 14, 9);	g.addEdge(8, 10, 10);
-
-	g.shortestPath(0);
-	std::cout << "0 ";
-	for (int i = 0; i < g.path.size(); i++) {
-		std::cout << g.path[i] << " ";
-	}
-	std::cout << std::endl;
-}
+//void MainWindow::test_button() {
+//	// create the graph given in above fugure 
+//	int V = 11;
+//	std::vector<int> endNode_NoSet = { 9,10 };
+//	Graph g(V, endNode_NoSet);
+//
+//	//  making above shown graph 
+//	g.addEdge(0, 4, 1);		g.addEdge(0, 1, 2);
+//	g.addEdge(1, 8, 3);		g.addEdge(1, 11, 4);	g.addEdge(1, 8, 5);	g.addEdge(1, 11,6);
+//	g.addEdge(2, 8, 3);		g.addEdge(2, 11, 4);	g.addEdge(2, 8, 5);	g.addEdge(2, 1, 6);
+//	g.addEdge(3, 7, 7);		g.addEdge(3, 2, 8);		g.addEdge(4, 7, 7);	g.addEdge(4, 2, 8);
+//	g.addEdge(5, 7, 7);		g.addEdge(5, 2, 8);
+//	g.addEdge(6, 1, 7);		g.addEdge(6, 2, 8);
+//	g.addEdge(7, 4, 9);		g.addEdge(7, 1, 10);
+//	g.addEdge(8, 14, 9);	g.addEdge(8, 10, 10);
+//
+//	g.shortestPath(0);
+//	std::cout << "0 ";
+//	for (int i = 0; i < g.path.size(); i++) {
+//		std::cout << g.path[i] << " ";
+//	}
+//	std::cout << std::endl;
+//}

@@ -157,7 +157,7 @@
         </font>
        </property>
        <property name="text">
-        <string>CASE2021 Singular-Aware Opt</string>
+        <string>RAL(CASE)2021 Singular-Aware Opt</string>
        </property>
       </widget>
      </item>
@@ -681,7 +681,7 @@
           </font>
          </property>
          <property name="text">
-          <string>lamda</string>
+          <string>Lamda</string>
          </property>
         </widget>
        </item>
@@ -707,23 +707,23 @@
       </layout>
      </item>
      <item>
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 255);</string>
-       </property>
-       <property name="text">
-        <string>Filament Volume:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Filament Volume =</string>
+         </property>
+        </widget>
+       </item>
        <item>
         <widget class="QCheckBox" name="checkBox_varyDistance">
          <property name="font">
@@ -806,7 +806,7 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 80);</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>1.Variable Filament Calculation</string>
@@ -937,7 +937,7 @@
           </size>
          </property>
          <property name="text">
-          <string>5.G Code Writting </string>
+          <string>5.G Code Writing </string>
          </property>
         </widget>
        </item>
@@ -984,20 +984,6 @@
        </attribute>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_test">
-       <property name="text">
-        <string>PushButton_test</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_clearAll">
-       <property name="text">
-        <string>Clear All</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
   </widget>
@@ -1007,7 +993,7 @@
      <x>0</x>
      <y>0</y>
      <width>1325</width>
-     <height>18</height>
+     <height>26</height>
     </rect>
    </property>
    <property name="layoutDirection">

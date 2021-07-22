@@ -891,7 +891,7 @@ double GcodeGeneration::_toLeft(
 		+ startPnt_q(0) * endPnt_s(1) - startPnt_q(1) * endPnt_s(0)
 		+ endPnt_s(0) * origin_p(1) - endPnt_s(1) * origin_p(0);
 
-	bool isLeft = -1.0;
+	double isLeft = -1.0;
 	if (Area2 > 0.0) isLeft = 1.0;
 
 	return isLeft;

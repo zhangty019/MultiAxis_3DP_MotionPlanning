@@ -99,7 +99,7 @@ private slots:
     void shiftToOrigin();
     void updateTree();
 	void mouseMoveEvent(QMouseEvent *event);
-    void on_pushButton_clearAll_clicked();
+    //void on_pushButton_clearAll_clicked();
     void on_treeView_clicked(const QModelIndex &index);
 
 	/*Button Function*/
@@ -118,7 +118,7 @@ private slots:
     void special_Draw_Command();
 
     /*This is for function test*/
-    void test_button();
+    //void test_button();
 };
 
 #endif // MAINWINDOW_H
