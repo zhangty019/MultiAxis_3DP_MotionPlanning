@@ -76,3 +76,8 @@ Clicking button '**Simulation**'.
 ## Curved Layer Generation Algorithm
 
 - The inputed layers and waypoints are generated from this paper ([*ACM Transactions on Graphics (Proceedings of SIGGRAPH Asia 2020)*, vol.39, no.6, article no.204, 2020.](https://dl.acm.org/doi/abs/10.1145/3414685.3417834)) , In specifically, this repository is supporting the part "Fabrication Enabling" of above TOG paper.([Source Code](https://github.com/GuoxinFang/ReinforcedFDM)),([Project Page](https://guoxinfang.github.io/ReinforcedFDM.html)),( [Video Link](https://www.youtube.com/watch?v=X2o2-SJFv2M)).
+
+# Contact information
+Tianyu Zhang (tianyu.zhang-10@postgrad.manchester.ac.uk)
+Guoxin Fang  (g.fang-1@tudelft.nl)
+Charlie C.L. Wang  (changling.wang@manchester.ac.uk)
