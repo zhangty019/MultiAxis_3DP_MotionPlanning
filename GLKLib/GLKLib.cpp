@@ -301,7 +301,8 @@ void GLKLib::setCamera()
 {
     glTranslatef(m_xTranslation,m_yTranslation,m_zTranslation);
     glRotatef(m_xRotation,1.0f,0.0f,0.0f);
-    glRotatef(m_yRotation,0.0f,1.0f,0.0f);
+    glRotatef(m_yRotation,0.0f,0.0f,1.0f); //glRotatef(m_yRotation,0.0f,1.0f,0.0f); 
+                                           //amazing change ^-^ tianyu 20210808
     glScalef(m_Scaling,m_Scaling,m_Scaling);
 }
 
