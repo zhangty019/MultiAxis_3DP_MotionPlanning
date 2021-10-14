@@ -1,4 +1,4 @@
-# Singularity-Aware Motion Planning for Multi-AxisAdditive Manufacturing (RAL2021 & CASE2021)
+# Singularity-Aware Motion Planning for Multi-Axis Additive Manufacturing (RAL2021 & CASE2021)
 
 ![](DataSet/bunnyTeaser.jpg)
 
