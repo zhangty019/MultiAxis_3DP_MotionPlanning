@@ -2,8 +2,6 @@
 
 ![](DataSet/bunnyTeaser.jpg)
 
-![](DataSet/simulation.gif)
-
 [Tianyu Zhang](https://zhangty019.github.io/),  Xiangjia Chen, Guoxin Fang, Yingjun Tian, [Charlie C.L. Wang](https://mewangcl.github.io/), [*IEEE Robotics and Automation Letters*, vol. 6, no. 4, pp. 6172-6179, Oct. 2021, doi: 10.1109/LRA.2021.3091109.](https://ieeexplore.ieee.org/document/9462416)
 
 This code can translate the position and orientation information in the Model Coordinate System (MSC) into a Cartesian-based Machine Coordinate System (MSC) and generate G-code, which brings a smooth and collision-free motion for multi-axis 3D printing. [Video Link](https://www.youtube.com/watch?v=fsE2KpLk7ZI&t=7s)
@@ -74,6 +72,8 @@ Clicking button '**5. G Code Writing**'.
 Clicking button '**Simulation**'.
 
 - The **progress bar** shows the percentage of completed print volume, and clicking the checkbox '**stop**' will stop the simulation from running.
+
+![](DataSet/simulation.gif)
 
 ## Curved Layer Generation Algorithm
 
