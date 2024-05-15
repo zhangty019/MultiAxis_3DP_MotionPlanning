@@ -82,6 +82,4 @@ Clicking button '**Simulation**'.
 ## Contact Information
 Tianyu Zhang (tianyu.zhang-10@postgrad.manchester.ac.uk)
 
-Guoxin Fang  (g.fang-1@tudelft.nl)
-
 Charlie C.L. Wang  (changling.wang@manchester.ac.uk)
