@@ -1,4 +1,4 @@
-# Singularity-Aware Motion Planning for Multi-Axis Additive Manufacturing (RAL2021 & CASE2021) [Finalist of Best Student Paper Award](https://case2021.sciencesconf.org/resource/page/id/37)
+# Singularity-Aware Motion Planning for Multi-Axis Additive Manufacturing (RAL2021 & CASE2021) [Finalist of Best Student Paper Award](https://case2021.sciencesconf.org/resource/page/id/37.html?lang=en)
 
 ![](DataSet/bunnyTeaser.jpg)
 
